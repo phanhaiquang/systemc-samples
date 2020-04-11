@@ -16,6 +16,9 @@ docker-compose up
 ### Login to docker component
 
 docker-compose run sc bash
+cd /samples
+
+All samples are under this directory
 
 ### Execute "Hello World"
 
