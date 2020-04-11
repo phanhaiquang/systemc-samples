@@ -1,3 +1,5 @@
+// Downloaded from https://www.doulos.com/knowhow/systemc/tutorial/modules_and_processes/
+
 #include "systemc.h"
 #include "stim.h"
 #include "exor2.h"
