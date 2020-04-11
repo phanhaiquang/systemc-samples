@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  sc:
+    image: guusk/docker-systemc:2.3.0
+    volumes:
+      - .:/usr/src/mysrc
+    env_file:
+      - .env
+
