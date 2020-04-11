@@ -11,6 +11,10 @@ https://docs.docker.com/compose/install/
 
 docker-compose up
 
+P/S: In the case that you want to install more packages, please update Dockerfile.
+And rebuild container:
+  docker-compose up -d --no-deps --build
+
 ## Run samples
 
 ### Login to docker component
@@ -36,3 +40,13 @@ If below information is shown, it means your environment is ready to go !
 Hello World.
 
 ---
+
+### Install VCD viewer
+
+#### Mac OS
+
+Follow this link to setup 
+https://cntnr.io/running-guis-with-docker-on-mac-os-x-a14df6a76efc
+
+socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
+

@@ -8,3 +8,5 @@ sim: *.h *.cpp
 run:
 	./sim
 
+view:
+	gtkwave *.vcd
