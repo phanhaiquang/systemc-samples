@@ -79,6 +79,14 @@ int sc_main(int, char* [])
 
     sc_trace(fp,top->clk_sig , "clk_sig");
     sc_trace(fp,top->rst_sig , "rst_sig");
+    sc_trace(fp,top->fir0->clk,"fir0->clk");
+    sc_trace(fp,top->fir0->rst,"fir0->rst");
+    sc_trace(fp,top->fir0->inp,"fir0->inp");
+    sc_trace(fp,top->fir0->inp_vld,"fir0->inp_vld");
+    sc_trace(fp,top->fir0->inp_rdy,"fir0->inp_rdy");
+    sc_trace(fp,top->fir0->outp,"fir0->outp");
+    sc_trace(fp,top->fir0->outp_vld,"fir0->outp_vld");
+    sc_trace(fp,top->fir0->outp_rdy,"fir0->outp_rdy");
 
     sc_start(200, SC_NS);
     sc_close_vcd_trace_file(fp);
